@@ -19,7 +19,7 @@ Item {
                 onRead: data => {
                     try {
                         const windows = JSON.parse(data);
-                        const matches = windows.filter(w => w.app_id && w.app_id.toLowerCase() === appEntry);
+                        const matches = windows.filter(w => w.app_id && w.app_id.toLowerCase() === appEntry || w.app_id.includes(appEntry) || appEntry.includes(w.app_id));
                         if (matches.length > 0) {
                             matches.forEach(m => {
                                 niriUrgentProcess.createObject(root, {
