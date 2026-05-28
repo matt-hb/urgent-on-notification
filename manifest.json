@@ -2,6 +2,7 @@
   "id": "urgent-on-notification",
   "name": "Set Window to Urgent on Notification",
   "version": "1.0.0",
+  "minNoctaliaVersion": "3.6.0",
   "author": "matt-hb",
   "tags": [
     "System",
